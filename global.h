@@ -1,14 +1,15 @@
 /*
 	Este arquivo inclui as variáveis globais usadas no jogo.
 */
+#define larguraMundo 1920
+#define alturaMundo 1080
+
 bool pausa=false;
 bool sair=false;
 bool reset=false;
 bool direita;
 bool esquerda;
 int dificuldade=1;
-float larguraTela=1920;
-float alturaTela=1080;
 float movimentoJogador=10;
 float movimentoInimigos=4;
 bool podeAtirar = true;
@@ -36,10 +37,12 @@ GLuint longTime;
 GLuint facil,facilSel,medio,medioSel,dificil,dificilSel;
 GLuint vidas;
 GLuint fundo1,fundo2,fundo3;
+GLuint mfalcon,xwing;
 Mix_Chunk *tiro;
 Mix_Chunk *tirotf;
 Mix_Music *musicaBatalha;
 Mix_Music *musicaMenu;
+int texturaAtual=1;
 enum telas {SPLASH, MENU, OPCOES, CREDITOS, JOJINHO, INSTRUCOES, DIFICULDADES} TELAS;
 int telaAtual=SPLASH;
 int aux=1;
